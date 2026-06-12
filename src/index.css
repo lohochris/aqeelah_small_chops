@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #052E16;
+  --color-brand-gold: #D4AF37;
+  --color-brand-cream: #FDFBF7;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #052E16;
+  color: #FDFBF7;
+}
+
+/* Hide scrollbars on dynamic horizontal carousels */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom radial dots texture */
+.dot-grid {
+  background-image: radial-gradient(#D4AF37 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+}
+
+/* Elegant custom narrow scrollbar styling */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 175, 55, 0.65) rgba(5, 46, 22, 0.5);
+  -webkit-overflow-scrolling: touch; /* Momentum scrolling on iOS */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(3, 30, 14, 0.6);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.65);
+  border-radius: 9999px;
+  border: 1.5px solid transparent;
+  background-clip: padding-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.95);
+  border: 1.5px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Form and Card aesthetic presets */
+.immersive-card {
+  background-color: rgba(6, 78, 59, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(8px);
+  color: #FDFBF7;
+}
+
+.luxury-input {
+  background-color: rgba(5, 46, 22, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #FDFBF7;
+}
+
+.luxury-input:focus {
+  border-color: #D4AF37;
+  outline: none;
+  box-shadow: 0 0 0 1px #D4AF37;
+}
